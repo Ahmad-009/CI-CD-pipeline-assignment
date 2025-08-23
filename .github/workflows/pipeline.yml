@@ -1,0 +1,23 @@
+name: CI-CD pipeline
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: actions/checkout@v3
+      - name: setting up node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: npm
+        run: npm install
+      - name: running lint
+        run: npm run lint
+      - name: build
+        run: npm run build
+        
+        
