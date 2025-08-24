@@ -62,6 +62,6 @@ jobs:
 
       - name: Unzip build
         run: unzip ./build/build.zip -d ./build/dist
-        
       - name: Serve React app
-        run: serve -s ./build/dist -l 5000
+        run: python3 -m http.server 5000 --directory ./build/dist
+
