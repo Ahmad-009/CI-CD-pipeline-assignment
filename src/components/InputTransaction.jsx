@@ -7,7 +7,7 @@ function InputTransaction({ title, Icon, active, onClick }) {
       onClick={onClick}
     >
       <h2 className={styles.title}>
-        <Icon className={styles.icon} />
+        <Icon className={styles.Icon} />
         {title}
       </h2>
     </div>

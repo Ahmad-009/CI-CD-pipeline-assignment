@@ -1,6 +1,6 @@
 import styles from './ExpenseCategory.module.css';
 
-function CategoryCard({ title, Icon, onClick }) {
+function CategoryCard({ title,icon, onClick }) {
   return (
     <div className={styles.card} onClick={onClick}>
       <Icon className={styles.icon} />
