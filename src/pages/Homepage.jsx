@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/NavBar';
+import Navbar from '../components/Navbar';
 import Card from '../components/Card';
 import styles from './Homepage.module.css';
 import { CiWallet } from "react-icons/ci";
